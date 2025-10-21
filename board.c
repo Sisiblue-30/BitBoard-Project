@@ -38,16 +38,17 @@ void Print_Board(SimpleGame* game){
         for (int j = 0; j < 8; ++j) {
             int x = (i*8)+j;
             if (game->Red_Pieces & (1ULL << x)) {
-                printf("r  ");
+                printf("red  ");
             }
             else if (game->Black_Pieces & (1ULL << x)) {
-                printf("b  ");
+                printf("bla  ");
             }
             else {
-                printf(".  ");
+                printf("...  ");
             }
         }
         printf("\n");
     }
 }
+
 
